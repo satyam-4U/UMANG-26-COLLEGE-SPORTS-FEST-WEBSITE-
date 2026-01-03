@@ -1,0 +1,180 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#c34b20;
+  color:white;
+  background-image: url(rulebooks/Screenshot\ 2025-12-29\ 230253.png);
+}
+
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  background:#0c0c0c;
+  
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+  margin-top: 10px;
+}
+
+.navbar a{
+  text-decoration:none;
+  color:white;
+  }
+  .navbar a:hover{
+    background-color: #10b33e;
+  }
+
+.navbar .logo{
+  background-color: #10b33e;
+  padding:10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2px;
+}
+.navbar button{
+  background-color: #10b377;
+  border-radius: 7px;
+  padding:5px
+}
+.hero{
+  height:80vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#4c0994,#9333ea);
+  background-image: url(rulebooks/gecv.jpeg);
+  background-size: cover;
+  opacity: .7;
+  
+}
+
+.hero h1{
+  font-size:100px;
+  color: #0606e5;
+ 
+}
+.hero.p{
+  font-weight: 400;
+  font-size:  xx-large;
+}
+
+section{
+
+  padding:60px 40px;
+  text-align:center;
+}
+
+
+.sports-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.sport-card{
+  background:#1e293b;
+  padding:40px;
+  border-radius:12px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.sport-card:hover{
+  background:#10b359;
+}
+
+
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+form{
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  color: aqua;
+}
+
+input,button{
+  padding: 12px;
+  border-radius:6px;
+  border:none;
+}
+
+button{
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+}
+.marquee-container {
+  width: 100%;
+  background-color:lightyellow ;
+  overflow: hidden;
+  margin-top: 22px;
+  margin-bottom: 20px; 
+  
+}
+
+.marquee-text {
+  display: flex;
+  padding: 10px 10px;
+  font-weight: bold;
+  color: grey;
+  animation: scroll 15s linear infinite;
+}
+
+.highlight {
+  color: #2278b9;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #111;
+  color:white;
+  font-size: 19px;
+  margin-top: 10px;
+}.map{
+  margin-top: 32px;
+  background-color: #c34b20;
+}
+#Register{
+  margin-top:19px;
+}
+.about{
+  margin-bottom:99 px;
+  padding-bottom: 8px;
+}

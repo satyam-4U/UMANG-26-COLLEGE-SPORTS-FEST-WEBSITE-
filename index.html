@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UMANG| College Sports Fest</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+
+    <nav class="navbar">
+        
+      <div class="logo">UMANG</div>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#Contact Us">Contact Us</a></li>
+       <button type="button"> <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+
+    
+    <section class="hero">
+      <h1>UMANG'26</h1>
+      <h2>The Ultimate Sports Fest Of GEC Vaishali</h2>
+    </section>
+
+    
+    <section class="about" id="about">
+      <h2>About UMANG</h2>
+      <p>
+        <strong> UMANG </strong>is our annual college sports fest that brings
+        together passion, teamwork, and competitive spirit across multiple
+        games. It is organized by the
+        <strong>Sports Club of GEC Vaishali</strong>
+        <strong>(DSTTE, Govt.of Bihar)</strong>.
+      </p>
+    </section>
+
+    
+    <section class="sports" id="sports">
+      <h2>Sports Events</h2>
+      <div class="marquee-container">
+        <div class="marquee-text">
+          <marquee behavior="" direction="left" scroll-amount="10">
+            Read the
+            <span class="highlight" onclick="alert('Open Rulebook!')"
+              >rulebook</span
+            >
+            on clicking the respective sports below and then
+            <span
+              class="highlight"
+              onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})"
+              >register</span
+            >!
+          </marquee>
+        </div>
+      </div>
+      <div class="sports-grid">
+        <div class="sport-card" onclick="openSport('cricket')">Cricket 🏏</div>
+        <div class="sport-card" onclick="openSport('badminton')">
+          Badminton 🏸
+        </div>
+        <div class="sport-card" onclick="openSport('volleyball')">
+          Volleyball 🏐
+        </div>
+        <div class="sport-card" onclick="openSport('kabaddi')">Kabaddi 👟</div>
+        <div class="sport-card" onclick="openSport('tabletennis')">
+          Table Tennis 🏓
+        </div>
+        <div class="sport-card" onclick="openSport('chess')">Chess ♟️</div>
+        <div class="sport-card" onclick="openSport('carrom')">Carrom 💿</div>
+        <div class="sport-card" onclick="openSport('athletics')">
+          Athletics ⛹️‍♂️
+        </div>
+        <div class="sport-card" onclick="openSport('basketball')">
+          Basketball 🏀
+        </div>
+      </div>
+    </section>
+
+
+    <section class="register" id="register">
+      <h2 id="Register">Register</h2>
+
+      <form id="regForm">
+        <input type="text" id="name" placeholder="Student Name" required />
+        <input type="text" id="roll" placeholder="Roll Number" required />
+        <input type="text" id="dept" placeholder="Department" required />
+        <input type="text" id="sport" placeholder="Sports" required />
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+
+    
+    <section class="gallery" id="gallery">
+      <h2>Gallery</h2>
+
+      <div class="gallery-grid">
+        <img src="rulebooks/img1.jpeg" alt="UMANG Event" />
+        <img src="rulebooks/img3.jpeg" alt="Sports Moment" />
+        <img src="rulebooks/img4.jpeg" alt="Team Spirit" />
+        <img src="rulebooks/img7.jpeg" alt="Winning Moment" />
+        <img src="rulebooks/img5.jpeg" alt="Winning Moment" />
+        <img src="rulebooks/img8.jpeg" alt="Winning Moment" />
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Government Engineering College, Vaishali</strong></p>
+      <p>Shyampur, Mansurpur, Bidupur, Vaishali – 844115, Bihar, India</p>
+      <p>Phone: 06229-297002</p>
+      <p>Email: principalgecvaishali@gmail.com</p>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps?q=Government+Engineering+College+Vaishali&output=embed"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <footer class="footer">©2026 GEC Vaishali |</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
